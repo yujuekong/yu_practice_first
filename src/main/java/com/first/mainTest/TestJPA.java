@@ -3,7 +3,6 @@ package com.first.mainTest;
 import com.first.domain.Message;
 
 import javax.persistence.*;
-import javax.transaction.Transactional;
 import java.util.List;
 
 /**

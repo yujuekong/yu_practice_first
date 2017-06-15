@@ -17,7 +17,7 @@ public class JpaTest {
         GuiceJpaService jpaService = injector.getInstance(GuiceJpaService.class);
         Message message = jpaService.find();
         System.out.println(message.getMessageName());
-        Message newMessage = new Message("615","新消息","这是一条新的消息");
-        jpaService.saveMessage(newMessage);
+//        Message newMessage = new Message("615","新消息","这是一条新的消息");
+//        jpaService.saveMessage(newMessage);
     }
 }
