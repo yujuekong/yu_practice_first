@@ -4,12 +4,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Created by yujuekong on 2017/6/5.
  */
 @Entity
 @Table(name = "MESSAGE_PRACTICE")
+@XmlRootElement
 public class Message {
     @Id
     @Column(name = "M_ID")

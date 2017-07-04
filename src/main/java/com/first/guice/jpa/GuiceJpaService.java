@@ -1,10 +1,12 @@
 package com.first.guice.jpa;
 
 import com.first.domain.Message;
+import com.google.inject.BindingAnnotation;
 import com.google.inject.Inject;
 import com.google.inject.persist.Transactional;
 
 import javax.persistence.EntityManager;
+import javax.xml.ws.BindingType;
 
 
 /**
@@ -16,6 +18,7 @@ public class GuiceJpaService {
     private EntityManager entityManager;
 
     public Message find(){
+        System.out.println("find");
         Message message = entityManager.find(Message.class,"1");
         return message;
     }

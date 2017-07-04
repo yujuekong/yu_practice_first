@@ -1,7 +1,10 @@
 package com.first.guice.module;
 
+import com.first.guice.jpa.GuiceJpaService;
+import com.first.guice.jpa.JpaInitializer;
 import com.first.guice.service.*;
 import com.google.inject.AbstractModule;
+import com.google.inject.Singleton;
 import com.google.inject.matcher.Matchers;
 
 /**
