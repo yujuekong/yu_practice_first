@@ -1,10 +1,5 @@
 package com.first.mainTest;
 
-import com.first.guice.jpa.JpaInitializer;
-import com.first.guice.module.JerseyModule;
-import com.google.inject.Guice;
-import com.google.inject.Injector;
-import com.google.inject.persist.jpa.JpaPersistModule;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;
 

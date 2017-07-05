@@ -7,7 +7,7 @@
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
-   <!--这是guice的servelt支持-->
+   <!--这是guice的servelt过滤支持-->
     <filter>
         <filter-name>guiceFilter</filter-name>
         <filter-class>com.google.inject.servlet.GuiceFilter</filter-class>

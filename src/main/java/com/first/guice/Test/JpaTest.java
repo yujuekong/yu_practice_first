@@ -15,7 +15,7 @@ public class JpaTest {
         Injector injector = Guice.createInjector(new JpaPersistModule("domain"));
         JpaInitializer jpaInitializer = injector.getInstance(JpaInitializer.class);
         GuiceJpaService jpaService = injector.getInstance(GuiceJpaService.class);
-        Message message = jpaService.find();
+        Message message = jpaService.find("1");
         System.out.println(message.getMessageName());
 //        Message newMessage = new Message("615","新消息","这是一条新的消息");
 //        jpaService.saveMessage(newMessage);

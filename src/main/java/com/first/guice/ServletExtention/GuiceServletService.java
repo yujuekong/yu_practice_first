@@ -20,6 +20,7 @@ public class GuiceServletService extends GuiceServletContextListener{
             protected void configureServlets() {
                 install(new JpaPersistModule("domain"));
                 install(new JerseyModule());
+                //持久化过滤器，web程序必须的，代替了PersistService的start()初始化启动
                 filter("/*").through(PersistFilter.class);
             }
         });

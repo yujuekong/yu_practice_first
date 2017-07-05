@@ -1,8 +1,7 @@
 package com.first.guice.module;
 
-import com.first.Jersey.注解练习.GetPractice;
+import com.first.Jersey.GetPractice;
 import com.first.guice.jpa.GuiceJpaService;
-import com.first.guice.jpa.JpaInitializer;
 import com.sun.jersey.guice.JerseyServletModule;
 import com.sun.jersey.guice.spi.container.servlet.GuiceContainer;
 
@@ -24,6 +23,7 @@ public class JerseyModule extends JerseyServletModule {
 
         Map<String, String> params = new HashMap<>();
         params.put(PROPERTY_PACKAGES, "com.first.Jersey");
+        //这里控制jersey注解path的过滤，和指定jersey api所在的包（可以在web.xml中配置）
         serve("/*").with(GuiceContainer.class, params);
     }
 }
