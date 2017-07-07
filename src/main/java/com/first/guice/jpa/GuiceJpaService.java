@@ -1,11 +1,14 @@
 package com.first.guice.jpa;
 
 import com.first.domain.Message;
+import com.google.common.base.Strings;
 import com.google.inject.Inject;
 import com.google.inject.persist.Transactional;
 
 import javax.persistence.EntityManager;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -29,5 +32,20 @@ public class GuiceJpaService {
     @Transactional
     public void saveMessage(Message message){
         entityManager.persist(message);
+    }
+
+    public String checkMessageName(String name){
+        String respose = "";
+        if(!Strings.isNullOrEmpty(name)){
+           List<Message> messageList = entityManager.createQuery("from Message t where t.messageName=:name ")
+                   .setParameter("name",name)
+                   .getResultList();
+           if(!messageList.isEmpty()){
+               respose = "red:消息名称重复！";
+           }else{
+               respose = "blue:消息名称可用！";
+           }
+        }
+        return respose;
     }
 }

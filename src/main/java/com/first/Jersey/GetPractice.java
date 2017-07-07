@@ -8,6 +8,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by yujuekong on 2017/6/26.
@@ -32,5 +33,11 @@ public class GetPractice{
     public Response saveMessage(Message message){
         jpaService.saveMessage(message);
         return Response.ok().build();
+    }
+
+    @GET
+    @Path("check-message-name")
+    public String checkMessageName(@QueryParam("name")String name){
+        return jpaService.checkMessageName(name);
     }
 }

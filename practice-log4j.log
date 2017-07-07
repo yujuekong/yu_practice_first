@@ -195,3 +195,93 @@ javax.servlet.ServletException: Servlets must be bound as singletons. Key[type=o
 10:50:59,562  INFO ContextHandler:788 - Started o.e.j.w.WebAppContext@20256a0b{/yu_practice_first,file:///Users/yujuekong/ideaSource/yu_practice_first/src/main/webApp/,AVAILABLE}{src/main/webApp}
 10:50:59,587  INFO AbstractConnector:280 - Started ServerConnector@5ee5a378{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
 10:50:59,587  INFO Server:444 - Started @3642ms
+15:28:00,145  INFO log:192 - Logging initialized @582ms to org.eclipse.jetty.util.log.Slf4jLog
+15:28:00,446  INFO Server:372 - jetty-9.4.6.v20170531
+15:28:00,696  INFO StandardDescriptorProcessor:281 - NO JSP Support for /yu_practice_first, did not find org.eclipse.jetty.jsp.JettyJspServlet
+15:28:01,539  INFO session:364 - DefaultSessionIdManager workerName=node0
+15:28:01,539  INFO session:369 - No SessionScavenger set, using defaults
+15:28:01,542  INFO session:149 - Scavenging every 660000ms
+15:28:01,597  WARN HibernatePersistence:58 - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+15:28:01,597  WARN HibernatePersistence:58 - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+15:28:01,598  WARN HibernatePersistence:58 - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+15:28:01,708  INFO LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: domain
+	...]
+15:28:01,808  INFO Version:54 - HHH000412: Hibernate Core {4.3.11.Final}
+15:28:01,811  INFO Environment:224 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.c3p0.time_out=1800, hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.c3p0.max_size=30, hibernate.dialect=org.hibernate.dialect.OracleDialect, hibernate.format_sql=true, hibernate.c3p0.min_size=5, hibernate.connection.username=cui, hibernate.connection.url=jdbc:oracle:thin:@192.168.1.141:1521:orcl, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.connection.password=****, hibernate.c3p0.max_statement=50}
+15:28:01,811  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+15:28:01,988  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+15:28:02,028  INFO C3P0ConnectionProvider:134 - HHH010002: C3P0 using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@192.168.1.141:1521:orcl
+15:28:02,029  INFO C3P0ConnectionProvider:135 - HHH000046: Connection properties: {user=cui, password=****}
+15:28:02,031  INFO C3P0ConnectionProvider:138 - HHH000006: Autocommit mode: false
+15:28:02,141  INFO MLog:92 - MLog clients using log4j logging.
+15:28:02,210  INFO C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+15:28:02,304  INFO AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@df49256d [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@b31f3d84 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9p7r62de2ycp83|633a2e99, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@55b10958 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9p7r62de2ycp83|7c9bdee9, jdbcUrl -> jdbc:oracle:thin:@192.168.1.141:1521:orcl, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9p7r62de2ycp83|b25b095, numHelperThreads -> 3 ]
+15:28:02,709  INFO Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+15:28:02,714  WARN Oracle9Dialect:70 - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+15:28:02,716  WARN OracleDialect:56 - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+15:28:02,718  INFO LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+15:28:02,816  INFO ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+15:28:03,636  INFO ContextHandler:788 - Started o.e.j.w.WebAppContext@21274afe{/yu_practice_first,file:///Users/yujuekong/ideaSource/yu_practice_first/src/main/webApp/,AVAILABLE}{src/main/webApp}
+15:28:03,661  INFO AbstractConnector:280 - Started ServerConnector@6f3bd37f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+15:28:03,662  INFO Server:444 - Started @4113ms
+16:05:34,377  INFO log:192 - Logging initialized @443ms to org.eclipse.jetty.util.log.Slf4jLog
+16:05:34,606  INFO Server:372 - jetty-9.4.6.v20170531
+16:05:34,763  INFO StandardDescriptorProcessor:281 - NO JSP Support for /yu_practice_first, did not find org.eclipse.jetty.jsp.JettyJspServlet
+16:05:35,709  INFO session:364 - DefaultSessionIdManager workerName=node0
+16:05:35,710  INFO session:369 - No SessionScavenger set, using defaults
+16:05:35,713  INFO session:149 - Scavenging every 600000ms
+16:05:35,772  WARN HibernatePersistence:58 - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+16:05:35,772  WARN HibernatePersistence:58 - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+16:05:35,772  WARN HibernatePersistence:58 - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+16:05:35,862  INFO LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: domain
+	...]
+16:05:35,947  INFO Version:54 - HHH000412: Hibernate Core {4.3.11.Final}
+16:05:35,952  INFO Environment:224 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.c3p0.time_out=1800, hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.c3p0.max_size=30, hibernate.dialect=org.hibernate.dialect.OracleDialect, hibernate.format_sql=true, hibernate.c3p0.min_size=5, hibernate.connection.username=cui, hibernate.connection.url=jdbc:oracle:thin:@192.168.1.141:1521:orcl, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.connection.password=****, hibernate.c3p0.max_statement=50}
+16:05:35,953  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+16:05:36,206  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+16:05:36,253  INFO C3P0ConnectionProvider:134 - HHH010002: C3P0 using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@192.168.1.141:1521:orcl
+16:05:36,254  INFO C3P0ConnectionProvider:135 - HHH000046: Connection properties: {user=cui, password=****}
+16:05:36,256  INFO C3P0ConnectionProvider:138 - HHH000006: Autocommit mode: false
+16:05:36,352  INFO MLog:92 - MLog clients using log4j logging.
+16:05:36,412  INFO C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+16:05:36,526  INFO AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@e3d1a0c9 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@3fa62da8 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9p7sidq516q0b0h|633a2e99, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@e237f97c [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9p7sidq516q0b0h|7c9bdee9, jdbcUrl -> jdbc:oracle:thin:@192.168.1.141:1521:orcl, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9p7sidq516q0b0h|b25b095, numHelperThreads -> 3 ]
+16:05:36,959  INFO Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+16:05:36,965  WARN Oracle9Dialect:70 - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+16:05:36,967  WARN OracleDialect:56 - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+16:05:36,969  INFO LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+16:05:37,080  INFO ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+16:05:37,996  INFO ContextHandler:788 - Started o.e.j.w.WebAppContext@76a362a4{/yu_practice_first,file:///Users/yujuekong/ideaSource/yu_practice_first/src/main/webApp/,AVAILABLE}{src/main/webApp}
+16:05:38,020  INFO AbstractConnector:280 - Started ServerConnector@403364e9{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+16:05:38,021  INFO Server:444 - Started @4099ms
+16:10:19,837  INFO log:192 - Logging initialized @419ms to org.eclipse.jetty.util.log.Slf4jLog
+16:10:20,036  INFO Server:372 - jetty-9.4.6.v20170531
+16:10:20,172  INFO StandardDescriptorProcessor:281 - NO JSP Support for /yu_practice_first, did not find org.eclipse.jetty.jsp.JettyJspServlet
+16:10:21,038  INFO session:364 - DefaultSessionIdManager workerName=node0
+16:10:21,038  INFO session:369 - No SessionScavenger set, using defaults
+16:10:21,042  INFO session:149 - Scavenging every 600000ms
+16:10:21,116  WARN HibernatePersistence:58 - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+16:10:21,116  WARN HibernatePersistence:58 - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+16:10:21,116  WARN HibernatePersistence:58 - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+16:10:21,237  INFO LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: domain
+	...]
+16:10:21,356  INFO Version:54 - HHH000412: Hibernate Core {4.3.11.Final}
+16:10:21,359  INFO Environment:224 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.c3p0.time_out=1800, hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.c3p0.max_size=30, hibernate.dialect=org.hibernate.dialect.OracleDialect, hibernate.format_sql=true, hibernate.c3p0.min_size=5, hibernate.connection.username=cui, hibernate.connection.url=jdbc:oracle:thin:@192.168.1.141:1521:orcl, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.connection.password=****, hibernate.c3p0.max_statement=50}
+16:10:21,359  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+16:10:21,543  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+16:10:21,590  INFO C3P0ConnectionProvider:134 - HHH010002: C3P0 using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@192.168.1.141:1521:orcl
+16:10:21,591  INFO C3P0ConnectionProvider:135 - HHH000046: Connection properties: {user=cui, password=****}
+16:10:21,593  INFO C3P0ConnectionProvider:138 - HHH000006: Autocommit mode: false
+16:10:21,691  INFO MLog:92 - MLog clients using log4j logging.
+16:10:21,752  INFO C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+16:10:21,846  INFO AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@34a0e67d [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@8bf9e74 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9p7sohw7fw12c3|633a2e99, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@ab516a48 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9p7sohw7fw12c3|7c9bdee9, jdbcUrl -> jdbc:oracle:thin:@192.168.1.141:1521:orcl, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9p7sohw7fw12c3|b25b095, numHelperThreads -> 3 ]
+16:10:22,191  INFO Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+16:10:22,197  WARN Oracle9Dialect:70 - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+16:10:22,199  WARN OracleDialect:56 - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+16:10:22,201  INFO LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+16:10:22,302  INFO ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+16:10:23,208  INFO ContextHandler:788 - Started o.e.j.w.WebAppContext@76a362a4{/yu_practice_first,file:///Users/yujuekong/ideaSource/yu_practice_first/src/main/webApp/,AVAILABLE}{src/main/webApp}
+16:10:23,240  INFO AbstractConnector:280 - Started ServerConnector@5c03784c{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+16:10:23,240  INFO Server:444 - Started @3831ms
