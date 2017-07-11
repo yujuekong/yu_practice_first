@@ -84,17 +84,16 @@ var sendMessage = function(){
  */
 $(document).ready(function(){
     var callBack = function(text){
-        console.info(typeof text,text);
         var errorSpan = document.getElementById("error");
         if(text){
             var dataArray = text.split(":");
-            console.info(dataArray);
             errorSpan.style.color = dataArray[0];
             errorSpan.innerHTML = dataArray[1] ;
         }
     };
 
     $("#messageName").on('change',function(event){
+        console.info(event);
         var url = getRootPath() + "/api/get-practice/check-message-name?name=" + event.target.value;
         console.info(url);
         $.ajax({
@@ -102,7 +101,6 @@ $(document).ready(function(){
             type:'GET',
             dataType:'text',
             success:function(data,textStatus){
-                console.info(data,textStatus);
                 callBack(data);
             },
             error:function(XMLHttpRequest, textStatus, errorThrown){
